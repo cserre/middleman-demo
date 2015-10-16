@@ -9266,6 +9266,11 @@ button.close {
   .avatar-large {
     width: 50px; }
 
+/* line 12, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_avatar.scss */
+.heart {
+  font-size: 25px;
+  color: white; }
+
 /* line 1, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_badge.scss */
 .icon-badge-container {
   position: relative;
@@ -9345,15 +9350,20 @@ button.close {
     color: white; }
 
 /* line 12, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+.card-lg {
+  height: 300px; }
+
+/* line 15, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
 .card-bg {
   position: absolute;
   background-size: cover;
+  background-position: center center;
   top: 0;
   bottom: 0;
   width: 100%;
   border-radius: 2px; }
 
-/* line 20, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+/* line 24, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
 .card-description {
   position: absolute;
   top: 10px;
@@ -9361,7 +9371,7 @@ button.close {
   text-transform: uppercase;
   font-size: 10px; }
 
-/* line 27, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+/* line 31, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
 .card-shadow {
   position: absolute;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, transparent 80%);
@@ -9369,26 +9379,26 @@ button.close {
   bottom: 0px;
   width: 100%; }
 
-/* line 34, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+/* line 38, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
 .card-text {
   position: absolute;
   bottom: 10px;
   left: 10px; }
-  /* line 38, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+  /* line 42, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
   .card-text > h2 {
     font-size: 24px; }
-  /* line 41, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+  /* line 45, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
   .card-text > p {
     font-size: 13px; }
 
-/* line 45, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
-.card-user > img {
+/* line 49, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+.card-user > img, .card-user > i {
   position: absolute;
   top: 10px;
   right: 10px;
   border-radius: 50%; }
 
-/* line 51, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+/* line 56, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
 .card-link {
   position: absolute;
   top: 0px;
@@ -9397,21 +9407,21 @@ button.close {
   background: #000;
   opacity: 0; }
 
-/* line 59, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+/* line 64, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
 .card-link:hover {
   opacity: 0.1; }
 
-/* line 62, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+/* line 67, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
 .photo1 {
   background-image: url("../images/popular_1.jpg");
   background-position: center center; }
 
-/* line 66, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+/* line 71, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
 .photo2 {
   background-image: url("../images/popular_2.jpg");
   background-position: center center; }
 
-/* line 70, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
+/* line 75, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_card.css.scss */
 .photo3 {
   background-image: url("../images/popular_3.jpg");
   background-position: center center; }
@@ -9445,6 +9455,10 @@ button.close {
   .bg-black a {
     font-size: 20px;
     color: white; }
+
+/* line 25, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_feature.css.scss */
+.portfolio a {
+  font-size: 14px; }
 
 /* line 1, /Users/charlotteserre/code/cserre/middleman-demo/source/stylesheets/components/_style.css.scss */
 body {
