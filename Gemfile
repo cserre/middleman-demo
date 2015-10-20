@@ -21,5 +21,10 @@ gem 'jquery-middleman'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'font-awesome-sass', '~> 4.2.0'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-slick.js'
+  gem 'rails-assets-scrollReveal.js'
+end
+
 # CSS performance
 gem 'middleman-autoprefixer'

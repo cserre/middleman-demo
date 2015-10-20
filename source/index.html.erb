@@ -1,20 +1,41 @@
----
-title: Le Wagon Middleman boilerplate
----
-
 <!-- Banner -->
 <div class="banner text-center">
   <div class="banner-shadow"></div>
-  <div class="banner-content">
+  <div class="banner-content fadeInAndSlideDown">
     <h1>My famous burgers</h1>
     <p>Find the best burgers you have ever eaten</p>
-    <%= link_to "GET IT", "", class: "btn btn-warning" %>
+    <%= link_to "GET IT", "", class: "btn btn-warning", 'data-toggle': 'modal', 'data-target': '#myModal' %>
+    <!-- Modal -->
+
+
   </div>
 </div>
 
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Order your super burger</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="email">Your email</label>
+              <input type="email" id="email" placeholder="alan@turing.com" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="tel">Your phone number</label>
+              <input type="text" id="tel" placeholder="0102030405" class="form-control">
+              <input type="submit" class="btn btn-warning">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <!-- Cards -->
 <div class="padded-container">
-  <div class="container">
+  <div class="container second-block">
     <div class="row">
       <div class="col-sm-3">
         <h3><i class="fa fa-comment fa-dark-red"></i> Discuss best tools </h3>
@@ -43,7 +64,7 @@ title: Le Wagon Middleman boilerplate
     <div class="row">
 
       <div class="col-sm-4">
-        <div class="card">
+        <div class="card" data-sr>
           <span class="card-bg photo1"></span>
           <span class="card-shadow"></span>
           <span class="card-description">Street</span>
@@ -59,7 +80,7 @@ title: Le Wagon Middleman boilerplate
       </div>
 
       <div class="col-sm-4">
-        <div class="card">
+        <div class="card" data-sr>
           <span class="card-bg photo2"></span>
           <span class="card-shadow"></span>
           <span class="card-description">Gastro</span>
@@ -75,7 +96,7 @@ title: Le Wagon Middleman boilerplate
       </div>
 
       <div class="col-sm-4">
-        <div class="card">
+        <div class="card" data-sr>
 
           <span class="card-bg photo3"></span>
           <span class="card-shadow"></span>
@@ -107,3 +128,7 @@ title: Le Wagon Middleman boilerplate
     </div>
   </div>
 </div>
+
+<!-- Map -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+

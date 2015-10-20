@@ -22,3 +22,42 @@
   color: white;
   z-index: 2;
 }
+@keyframes fadeInAndSlideDown {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+// @-webkit-keyframes fadeInAndSlideDown {
+//   0% {
+//     opacity: 0;
+//     transform: translate(0px, -20px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translate(0px, 0px);
+//   }
+// }
+
+// @-moz-keyframes fadeInAndSlideDown {
+//   0% {
+//     opacity: 0;
+//     transform: translate(0px, -20px);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translate(0px, 0px);
+//   }
+// }
+
+.fadeInAndSlideDown {
+  opacity: 0;
+  animation: fadeInAndSlideDown 1s 0.5s ease forwards;
+  // -webkit-animation: fadeInAndSlideDown 1s 0.5s ease forwards;
+  // -moz-animation: fadeInAndSlideDown 1s 0.5s ease forwards;
+}
